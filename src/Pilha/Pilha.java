@@ -1,8 +1,8 @@
+package Pilha;
+
 public class Pilha {
-    
     private int valores[];
     private int topo;
-
 
     public Pilha() {
         valores = new int[10];
@@ -10,7 +10,7 @@ public class Pilha {
     }
 
     public void push(int elemento) {
-        topo ++;
+        topo++;
         valores[topo] = elemento;
     }
 
@@ -20,7 +20,6 @@ public class Pilha {
 
     public boolean isFull() {
         return (topo == 9);
-        
     }
 
     public int pop() {

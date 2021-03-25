@@ -1,8 +1,12 @@
-public class Conversor {
-    public static void main(String[] args) {
-        int numero = Integer.parseInt(args[0]);
-        Pilha p = new Pilha();
+package Pilha;
 
+public class Conversor {
+
+    public static void main(String[] args) {
+
+        int numero = 172;
+        //int numero = Integer.parseInt(args[0]);
+        Pilha p = new Pilha();
         int resto;
 
         //fase 1 = empilhamentos dos restos;
