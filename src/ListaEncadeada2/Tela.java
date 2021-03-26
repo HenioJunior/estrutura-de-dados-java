@@ -10,7 +10,7 @@ public class Tela {
         System.out.println ("=              Escolha uma opção              =");
         System.out.println ("-----------------------------------------------");
         System.out.println ("= 1. Inserir no Início                        =");
-        System.out.println ("= 2.  Inserir no Final                        =");
+        System.out.println ("= 2. Inserir no Final                         =");
         System.out.println ("= 3. Localizar Pessoa                         =");
         System.out.println ("= 4. Excluir uma Pessoa                       =");
         System.out.println ("= 5. Imprimir Lista                           =");
