@@ -1,14 +1,14 @@
 package ListaEncadeada;
 
-public class Caixinha {
+public class Node {
     private int elemento;
-    private Caixinha proximo;
+    private Node proximo;
 
     public int getElemento() {
         return elemento;
     }
 
-    public Caixinha getProximo() {
+    public Node getProximo() {
         return proximo;
     }
 
@@ -16,7 +16,7 @@ public class Caixinha {
         this.elemento = elemento;
     }
 
-    public void setProximo(Caixinha proximo) {
+    public void setProximo(Node proximo) {
         this.proximo = proximo;
     }
 }

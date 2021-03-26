@@ -2,7 +2,7 @@ package ListaEncadeada;
 
 public class Lista {
 
-    private Caixinha inicio;
+    private Node inicio;
 
     //Criando a lista vazia
     public Lista() {
@@ -11,7 +11,7 @@ public class Lista {
 
     public void inserir(int elemento) {
         //Tenho que criar uma nova caixinha
-        Caixinha nova = new Caixinha();
+        Node nova = new Node();
         nova.setElemento(elemento); //Inseri o elemento na caixinha;
         nova.setProximo(null);      //Depois dela não vem ninguem
 
@@ -19,7 +19,7 @@ public class Lista {
             inicio = nova;
         }
         else{
-            Caixinha aux;
+            Node aux;
             aux = inicio;
             while(aux.getProximo() !=null){
                 aux = aux.getProximo();
@@ -31,7 +31,7 @@ public class Lista {
     public int retirar() {
         //Este método considera que a lista sempre tem elementos;
         //Alguem na aplicação precisa(antes de remover), testar se a lista não esta vazia;
-        Caixinha aux = inicio;
+        Node aux = inicio;
         int elemento = aux.getElemento();
         inicio = aux.getProximo();
         return elemento;
@@ -42,7 +42,7 @@ public class Lista {
             System.out.println("Nada a exibir - a lista esta vazia!");
         }
         else{
-            Caixinha aux = inicio;
+            Node aux = inicio;
             while (aux != null) {
                 System.out.println("Elemento localizado " + aux.getElemento());
                 aux = aux.getProximo();

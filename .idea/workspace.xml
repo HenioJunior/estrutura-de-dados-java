@@ -28,7 +28,12 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.Tela">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="PilhaUsandoLista" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MyApp">
     <configuration name="Banco" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Fila.Banco" />
       <module name="estrutura_dados" />
@@ -36,8 +41,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Conversor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Pilha.Conversor" />
+    <configuration name="Conversor (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PilhaUsandoLista.Conversor" />
       <module name="estrutura_dados" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -45,6 +50,13 @@
     </configuration>
     <configuration name="ListaDeEspera" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ListaEncadeada.ListaDeEspera" />
+      <module name="estrutura_dados" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ListasCirculares.MyApp" />
       <module name="estrutura_dados" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -59,10 +71,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyApp" />
+        <item itemvalue="Application.Conversor (1)" />
         <item itemvalue="Application.Tela" />
         <item itemvalue="Application.ListaDeEspera" />
         <item itemvalue="Application.Banco" />
-        <item itemvalue="Application.Conversor" />
       </list>
     </recent_temporary>
   </component>
@@ -74,7 +87,8 @@
       <option name="presentableId" value="Default" />
       <updated>1616672966922</updated>
       <workItem from="1616672968247" duration="4175000" />
-      <workItem from="1616693707991" duration="15298000" />
+      <workItem from="1616693707991" duration="18005000" />
+      <workItem from="1616793595925" duration="3427000" />
     </task>
     <servers />
   </component>
@@ -90,26 +104,26 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2363" y="131" width="1024" height="852" key="#Project_Structure/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616672978172" />
-    <state x="2688" y="257" width="374" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1616707714632">
+    <state x="2688" y="257" width="374" height="599" key="#com.intellij.ide.util.MemberChooser" timestamp="1616793800974">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2688" y="257" width="374" height="599" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616707714632" />
-    <state width="1878" height="409" key="GridCell.Tab.0.bottom" timestamp="1616769578891">
+    <state x="2688" y="257" width="374" height="599" key="#com.intellij.ide.util.MemberChooser/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616793800974" />
+    <state width="1878" height="406" key="GridCell.Tab.0.bottom" timestamp="1616796801799">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="409" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616769578891" />
-    <state width="1878" height="409" key="GridCell.Tab.0.center" timestamp="1616769578891">
+    <state width="1878" height="406" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616796801799" />
+    <state width="1878" height="406" key="GridCell.Tab.0.center" timestamp="1616796801799">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="409" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616769578891" />
-    <state width="1878" height="409" key="GridCell.Tab.0.left" timestamp="1616769578891">
+    <state width="1878" height="406" key="GridCell.Tab.0.center/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616796801799" />
+    <state width="1878" height="406" key="GridCell.Tab.0.left" timestamp="1616796801799">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="409" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616769578891" />
-    <state width="1878" height="409" key="GridCell.Tab.0.right" timestamp="1616769578891">
+    <state width="1878" height="406" key="GridCell.Tab.0.left/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616796801799" />
+    <state width="1878" height="406" key="GridCell.Tab.0.right" timestamp="1616796801799">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="409" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616769578891" />
+    <state width="1878" height="406" key="GridCell.Tab.0.right/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1616796801799" />
     <state x="2376" y="188" width="1007" height="737" key="SettingsEditor" timestamp="1616696123839">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
