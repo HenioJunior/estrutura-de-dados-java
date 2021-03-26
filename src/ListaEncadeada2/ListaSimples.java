@@ -10,7 +10,7 @@ public class ListaSimples {
         this.primeiro = null;
         this.ultimo = null;
         this.quantNode = 0;
-    } //--------------------------------------------Construtor
+    } //------------------------------------------------------------------------------------------------------Construtor
 
     public Node getPrimeiro() {
         return primeiro;
@@ -34,7 +34,7 @@ public class ListaSimples {
 
     public void setQuantNode(int quantNode) {
         this.quantNode = quantNode;
-    }//--------------------------------------------------------
+    }//-----------------------------------------------------------------------------------------------------------------
 
     public void inserirPrimeiro(Pessoa p) {
         Node novoNode = new Node (p);
@@ -45,7 +45,20 @@ public class ListaSimples {
         this.primeiro = novoNode;
         this.quantNode++;
 
-    }//----------------------------------------Inserir Primeiro
+    }//--------------------------------------------------------------------------------------------------inserirPrimeiro
+
+    public void inserirUltimo(Pessoa p) {
+        Node novoNode = new Node (p);
+        if(this.eVazia()) {
+            this.primeiro = novoNode;
+        }
+        else {
+            this.ultimo.setProximo(novoNode);
+        }
+        this.ultimo = novoNode;
+        this.quantNode++;
+
+    }//----------------------------------------------------------------------------------------------------inserirUltimo
 
     public boolean removerNode (String nome) {
         Node atual = this.primeiro;
@@ -74,7 +87,7 @@ public class ListaSimples {
             return true;
         }
 
-    }//-----------------------------------------------removerNode
+    }//------------------------------------------------------------------------------------------------------removerNode
 
     public String pesquisarNode (String nome) {
         String msg ="";
@@ -85,7 +98,7 @@ public class ListaSimples {
         return msg = "Nome: " + atual.getP().getNome() + "\n" +
                      "Sexo: " + atual.getP().getSexo() + "\n" +
                      "Idade: " + atual.getP().getIdade();
-    }//----------------------------------------------pesquisarNode
+    }//----------------------------------------------------------------------------------------------------pesquisarNode
 
     public String imprimirLista() {
         String msg = "";
@@ -100,9 +113,9 @@ public class ListaSimples {
             }
         }
         return msg;
-    }//----------------------------------------------imprimirLista
+    }//----------------------------------------------------------------------------------------------------imprimirLista
 
     public boolean eVazia() {
         return (this.primeiro == null);
-    }//-----------------------------------------------------eVazia
+    }//-----------------------------------------------------------------------------------------------------------eVazia
 }

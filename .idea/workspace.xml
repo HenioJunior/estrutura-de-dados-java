@@ -28,7 +28,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.ListaDeEspera">
+  <component name="RunManager" selected="Application.Tela">
     <configuration name="Banco" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Fila.Banco" />
       <module name="estrutura_dados" />
@@ -50,8 +50,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tela" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ListaEncadeada2.Tela" />
+      <module name="estrutura_dados" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Tela" />
         <item itemvalue="Application.ListaDeEspera" />
         <item itemvalue="Application.Banco" />
         <item itemvalue="Application.Conversor" />
@@ -66,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1616672966922</updated>
       <workItem from="1616672968247" duration="4175000" />
-      <workItem from="1616693707991" duration="10693000" />
+      <workItem from="1616693707991" duration="14832000" />
     </task>
     <servers />
   </component>
