@@ -33,14 +33,7 @@
       <recent name="PilhaUsandoLista" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MyApp">
-    <configuration name="Banco" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Fila.Banco" />
-      <module name="estrutura_dados" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.MyApp (1)">
     <configuration name="Conversor (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PilhaUsandoLista.Conversor" />
       <module name="estrutura_dados" />
@@ -50,6 +43,13 @@
     </configuration>
     <configuration name="ListaDeEspera" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ListaEncadeada.ListaDeEspera" />
+      <module name="estrutura_dados" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyApp (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BuscaSequencialEBinaria.MyApp" />
       <module name="estrutura_dados" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -71,11 +71,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyApp (1)" />
         <item itemvalue="Application.MyApp" />
         <item itemvalue="Application.Conversor (1)" />
         <item itemvalue="Application.Tela" />
         <item itemvalue="Application.ListaDeEspera" />
-        <item itemvalue="Application.Banco" />
       </list>
     </recent_temporary>
   </component>
@@ -89,6 +89,7 @@
       <workItem from="1616672968247" duration="4175000" />
       <workItem from="1616693707991" duration="18005000" />
       <workItem from="1616793595925" duration="3427000" />
+      <workItem from="1616797348505" duration="1267000" />
     </task>
     <servers />
   </component>
