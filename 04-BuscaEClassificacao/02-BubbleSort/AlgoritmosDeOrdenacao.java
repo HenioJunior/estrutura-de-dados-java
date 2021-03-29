@@ -6,7 +6,7 @@ public class AlgoritmosDeOrdenacao {
         this.vetor = vetor;
     }
 
-    public void bubleSort() {
+    public void bubbleSort() {
         int it;     //numero de iteracoes
         int pos;    //sempre uso a posicao atual
         int temp;   //variavel para a troca

@@ -1,0 +1,66 @@
+[25, 57, 48, 37, 12, 92, 33]
+  0   1   2   3   4   5   6
+  
+1a Iteração
+posMenorInicial = 0
+posMenor = 4
+
+temp = vetor[posMenorInicial]
+vetor[posMenorInicial] = vetor[posMenor]
+vetor[posMenor] = temp;
+
+12, [57, 48, 37, 25, 92, 33]
+ 0    1   2   3   4   5   6
+  
+2a Iteração
+posMenorInicial = 1
+posMenor = 2 - 3 - 4
+
+temp = vetor[posMenorInicial]
+vetor[posMenorInicial] = vetor[posMenor]
+vetor[posMenor] = temp;
+
+12, 25, [48, 37, 57, 92, 33]
+ 0   1    2   3   4   5   6
+  
+3a Iteração
+posMenorInicial = 2
+posMenor = 3 - 6
+
+//troca
+
+12, 25, 33, [37, 57, 92, 48]
+ 0   1   2    3   4   5   6
+   
+4a Iteração
+posMenorInicial = 3
+posMenor = 4
+
+if(vetor[posMenor] < vetor[posMenorInicial]) {
+       troca
+   }
+
+12, 25, 33, 37, [57, 92, 48]
+ 0   1   2   3    4   5   6
+
+5a Iteração
+posMenorInicial = 4
+posMenor = 5 (4 < 5? V) e (4 < 6? F) PosMenor = 6
+
+if(vetor[posMenor] < vetor[posMenorInicial]) {
+       troca
+   }
+
+12, 25, 33, 37, 48, [92, 57]
+ 0   1   2   3   4    5   6
+
+6a Iteração
+posMenorInicial = 5
+posMenor = 6
+
+if(vetor[posMenor] < vetor[posMenorInicial]) {
+       troca
+   }
+
+12, 25, 33, 37, 48, 57, 92]
+ 0   1   2   3   4   5   6

@@ -11,7 +11,7 @@ public class MainApp {
 
         AlgoritmosDeOrdenacao alg = new AlgoritmosDeOrdenacao();
         alg.setVetor(vetor);
-        alg.bubleSort();
+        alg.bubbleSort();
         alg.mostraVetor();
     }
 }
