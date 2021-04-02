@@ -7,7 +7,7 @@ public class Colecao {
         int pos;
         for(pos = 0 ; pos < valores.length; pos++) {
             if(val == valores[pos]) {
-                System.out.println("Iterações = "+iteracoes);
+                
                 return pos; //retorno a localização onde o elemento se  encontra;
             }
             iteracoes ++;
