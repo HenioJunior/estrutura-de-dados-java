@@ -6,39 +6,54 @@ public class MainApp {
 
     public static void main(String[] args) {
 
-        int v[] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-        int auxiliar[] = new int[v.length];
+        int v[] = {38, 27, 43, 3, 9, 82, 10};
 
-        mergeSort(v, auxiliar, 0, v.length - 1);
+
+        System.out.println(Arrays.toString(v));
+        mergeSort(v);
         System.out.println(Arrays.toString(v));
     }
 
-    private static void mergeSort(int[] v, int[] auxiliar, int inicio, int fim) {
-        if (inicio < fim) {
-            int meio = (inicio + fim) / 2;
-            mergeSort(v, auxiliar, inicio, meio);
-            mergeSort(v, auxiliar, meio + 1, fim);
-            intercalar(v, auxiliar, inicio, meio, fim);
-        }
-    }
+    private static void mergeSort(int[] vetor) {
 
-    private static void intercalar(int[] v, int[] auxiliar, int inicio, int meio, int fim) {
-        for (int k = inicio; k <= fim; k++) {
-            auxiliar[k] = v[k];
-        }
+        int len = vetor.length;
 
-        int i = inicio;
-        int j = meio + 1;
 
-        for (int k = inicio; k <= fim; k++) {
-            if (i > meio) {
-                v[k] = auxiliar[j++];
-            } else if (j > fim) {
-                v[k] = auxiliar[i++];
-            } else if (auxiliar[i] < auxiliar[j]) {
-                v[k] = auxiliar[i++];
-            } else {
-                v[k] = auxiliar[j++];
+        if (len > 1) {
+            int divisao = vetor.length / 2;
+            int esquerda[] = Arrays.copyOfRange(vetor, 0, divisao);
+            int direita[] = Arrays.copyOfRange(vetor, divisao, vetor.length);
+
+            mergeSort(esquerda);
+            mergeSort(direita);
+
+            int i = 0;
+            int j = 0;
+            int k = 0;
+
+            // Ordena esquerda e direita
+            while(i < esquerda.length && j < direita.length) {
+                if(esquerda[i] < direita[j]) {
+                    vetor[k] = esquerda[i];
+                    i += 1;
+                }
+                else {
+                    vetor[k] = direita[j];
+                    j += 1;
+                }
+                k += 1;
+            }
+            //Ordenação final
+            while(i < esquerda.length) {
+                vetor[k] = esquerda[i];
+                i += 1;
+                k += 1;
+            }
+
+            while(j < direita.length) {
+                vetor[k] = direita[j];
+                j += 1;
+                k += 1;
             }
         }
     }
