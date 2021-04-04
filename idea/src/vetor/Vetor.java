@@ -1,6 +1,8 @@
 package vetor;
 
-    public class Vetor {
+import java.util.Arrays;
+
+public class Vetor {
 
         private int[] elementos;
         private int tamanho, posicao, ultimaPosicao;
@@ -39,7 +41,30 @@ package vetor;
             return false;
         }
 
-        public void adicionaOrdenado(int elemento) {
+        public int tamanho() {
+            return tamanho;
+        }
+
+    @Override
+    public String toString() {
+            StringBuilder s = new StringBuilder();
+            s.append("[");
+
+            for(int i = 0; i < tamanho - 1; i++) {
+                s.append(elementos[i]);
+                s.append(", ");
+            }
+
+            if(this.tamanho >0) {
+                s.append(elementos[tamanho - 1]);
+            }
+
+            s.append("]");
+
+            return s.toString();
+    }
+
+    public void adicionaOrdenado(int elemento) {
             if(ultimaPosicao == elementos.length - 1) {
                 System.out.println("Capacidade máxima atingida");
             }
@@ -63,9 +88,4 @@ package vetor;
 
         }
 
-        public void imprime() {
-            for(int i = 0; i <= ultimaPosicao; i++) {
-                System.out.println("Elemento [" + i + "]" + " - " + elementos[i]);
-            }
-        }
     }
