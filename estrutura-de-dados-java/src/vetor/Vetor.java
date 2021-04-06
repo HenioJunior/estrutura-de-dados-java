@@ -33,6 +33,7 @@ public class Vetor {
 //        }
 
         public boolean adiciona(int elemento) {
+            aumentaCapacidade();
             if(tamanho < elementos.length) {
                 elementos[tamanho] = elemento;
                 tamanho++;
@@ -41,25 +42,52 @@ public class Vetor {
             return false;
         }
 
-//        public int busca(int posicao) {
-//            if(!(posicao >=0 && posicao < tamanho)) {
-//                throw new IllegalArgumentException("Posição inválida");
-//            }
-//            return this.elementos[posicao];
-//        }
-//
+        //0 1 2 3 4 5 6 => tamanho = 5
+        //B C E F G + +
+        public boolean adiciona(int posicao, int elemento) {
+            if(!(posicao >=0 && posicao < tamanho)) {
+                throw new IllegalArgumentException("Posição inválida");
+            }
+            aumentaCapacidade();
+            //mover todos os elementos
+            for(int i=tamanho - 1; i >= posicao; i--) {
+                elementos[i + 1] = elementos[i];
+            }
+            elementos[posicao] = elemento;
+            tamanho++;
+
+            return false;
+        }
+
+        private void aumentaCapacidade() {
+            if(tamanho == elementos.length) {
+                int[] elementosNovos = new int[elementos.length * 2];
+                for (int i = 0 ; i < tamanho; i++) {
+                    elementosNovos[i] = elementos[i];
+                }
+                elementos = elementosNovos;
+            }
+        }
+
+        public int busca(int posicao) {
+            if(!(posicao >=0 && posicao < tamanho)) {
+                throw new IllegalArgumentException("Posição inválida");
+            }
+            return this.elementos[posicao];
+        }
+
 //        public int tamanho() {
 //            return tamanho;
 //        }
 
-    public int busca(int elemento) {//No caso do String, não podemos usar o comparador ==. Usaremos o método equals.
-       for(int i = 0; i < tamanho; i++) {
-           if(elementos[i] == elemento) {
-               return i;
-           }
-       }
-       return -1;
-    }
+//    public int busca(int elemento) {//No caso do String, não podemos usar o comparador ==. Usaremos o método equals.
+//       for(int i = 0; i < tamanho; i++) {
+//           if(elementos[i] == elemento) {
+//               return i;
+//           }
+//       }
+//       return -1;
+//    }
 
     public int tamanho() {
         return tamanho;

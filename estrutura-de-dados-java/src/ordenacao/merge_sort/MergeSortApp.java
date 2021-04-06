@@ -2,7 +2,7 @@ package ordenacao.merge_sort;
 
 import java.util.Arrays;
 
-public class MainApp {
+public class MergeSortApp {
 
     public static void main(String[] args) {
 
