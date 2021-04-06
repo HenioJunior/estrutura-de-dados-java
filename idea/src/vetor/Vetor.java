@@ -41,9 +41,29 @@ public class Vetor {
             return false;
         }
 
-        public int tamanho() {
-            return tamanho;
-        }
+//        public int busca(int posicao) {
+//            if(!(posicao >=0 && posicao < tamanho)) {
+//                throw new IllegalArgumentException("Posição inválida");
+//            }
+//            return this.elementos[posicao];
+//        }
+//
+//        public int tamanho() {
+//            return tamanho;
+//        }
+
+    public int busca(int elemento) {//No caso do String, não podemos usar o comparador ==. Usaremos o método equals.
+       for(int i = 0; i < tamanho; i++) {
+           if(elementos[i] == elemento) {
+               return i;
+           }
+       }
+       return -1;
+    }
+
+    public int tamanho() {
+        return tamanho;
+    }
 
     @Override
     public String toString() {
@@ -85,7 +105,5 @@ public class Vetor {
                 }
                 elementos[posicao] = elemento;
                 ultimaPosicao ++;
-
         }
-
     }

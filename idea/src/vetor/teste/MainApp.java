@@ -18,6 +18,8 @@ import vetor.Vetor;
             vetor.adiciona(2);
             vetor.adiciona(20);
 
+            System.out.println(vetor.busca(14));
+
             System.out.println("Tamanho: " + vetor.tamanho());
             System.out.println(vetor);
         }
