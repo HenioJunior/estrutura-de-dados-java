@@ -14,6 +14,10 @@ public class Vetor {
 
         }
 
+        public int tamanho() {
+            return tamanho;
+        }
+
 //        public void adiciona (int elemento) {
 //            for(int i = 0; i < elementos.length; i++) {
 //                if(elementos[i] == 0) {
@@ -76,10 +80,6 @@ public class Vetor {
             return this.elementos[posicao];
         }
 
-//        public int tamanho() {
-//            return tamanho;
-//        }
-
 //    public int busca(int elemento) {//No caso do String, não podemos usar o comparador ==. Usaremos o método equals.
 //       for(int i = 0; i < tamanho; i++) {
 //           if(elementos[i] == elemento) {
@@ -89,8 +89,19 @@ public class Vetor {
 //       return -1;
 //    }
 
-    public int tamanho() {
-        return tamanho;
+    //B G D E F -> posição a ser removida 1
+    //0 1 2 3 4 -> tamanho = 5
+    //vetor[1] = vetor[2];
+    //vetor[2] = vetor[3];
+    //vetor[3] = vetor[4];
+    public void remove(int posicao) {
+        if(!(posicao >=0 && posicao < tamanho)) {
+            throw new IllegalArgumentException("Posição inválida");
+        }
+        for(int i = posicao; i < tamanho; i++) {
+            elementos[i] = elementos[i + 1];
+        }
+        tamanho--;
     }
 
     @Override

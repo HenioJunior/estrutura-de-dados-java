@@ -14,6 +14,7 @@ import vetor.Vetor;
     //            e.printStackTrace();
     //        }
 
+            //----------------------------Adiciona----------
             vetor.adiciona(2);
             vetor.adiciona(3);
             vetor.adiciona(5);
@@ -30,5 +31,14 @@ import vetor.Vetor;
 //            vetor.adiciona(3, 4);
 //
             System.out.println(vetor);
+            System.out.println("-------------------------");
+
+            //----------------------------Remove-----------
+            vetor.remove(0);
+            vetor.remove(3);
+            vetor.remove(1);
+
+            System.out.println(vetor);
+            System.out.println("-------------------------");
         }
     }
