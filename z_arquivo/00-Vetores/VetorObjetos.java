@@ -1,4 +1,4 @@
-package vetor;
+package vetor.arquivo;
 
 public class VetorObjetos {
 

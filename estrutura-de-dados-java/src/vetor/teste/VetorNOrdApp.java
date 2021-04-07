@@ -1,6 +1,6 @@
 package vetor.teste;
 
-import vetor.VetorNaoOrdenado;
+import vetor.arquivo.VetorNaoOrdenado;
 
 public class VetorNOrdApp {
 

@@ -1,12 +1,12 @@
 package vetor.teste;
 
-import vetor.VetorGenerico;
+import vetor.Lista;
 
-public class VetorGenApp {
+public class ListaApp {
 
     public static void main(String[] args) {
 
-        VetorGenerico<Contato> vetor = new VetorGenerico(10);
+        Lista<Contato> vetor = new Lista(10);
 
         Contato c1 = new Contato("Contato1", "1234567", "contato1@email.com");
         Contato c2 = new Contato("Contato2", "2234567", "contato2@email.com");

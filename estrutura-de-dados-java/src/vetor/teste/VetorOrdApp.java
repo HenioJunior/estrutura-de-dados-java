@@ -1,6 +1,6 @@
 package vetor.teste;
 
-import vetor.VetorOrdenado;
+import vetor.arquivo.VetorOrdenado;
 
 public class VetorOrdApp {
     public static void main(String[] args) {
