@@ -34,9 +34,12 @@ import vetor.Vetor;
             System.out.println("-------------------------");
 
             //----------------------------Remove-----------
-            vetor.remove(0);
-            vetor.remove(3);
-            vetor.remove(1);
+//            vetor.remove(0);
+//            vetor.remove(3);
+//            vetor.remove(1);
+            vetor.removeElemento(2);
+            vetor.removeElemento(5);
+            vetor.removeElemento(7);
 
             System.out.println(vetor);
             System.out.println("-------------------------");

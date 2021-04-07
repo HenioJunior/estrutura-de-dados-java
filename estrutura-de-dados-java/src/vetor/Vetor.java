@@ -80,14 +80,14 @@ public class Vetor {
             return this.elementos[posicao];
         }
 
-//    public int busca(int elemento) {//No caso do String, não podemos usar o comparador ==. Usaremos o método equals.
-//       for(int i = 0; i < tamanho; i++) {
-//           if(elementos[i] == elemento) {
-//               return i;
-//           }
-//       }
-//       return -1;
-//    }
+    public int buscaElemento(int elemento) {//No caso do String, não podemos usar o comparador ==. Usaremos o método equals.
+       for(int i = 0; i < tamanho; i++) {
+           if(elementos[i] == elemento) {
+               return i;
+           }
+       }
+       return -1;
+    }
 
     //B G D E F -> posição a ser removida 1
     //0 1 2 3 4 -> tamanho = 5
@@ -102,6 +102,15 @@ public class Vetor {
             elementos[i] = elementos[i + 1];
         }
         tamanho--;
+    }
+
+    public void removeElemento(int elemento) {
+            int pos = buscaElemento(elemento);
+            if(pos > -1) {
+                remove(pos);
+            } else {
+                System.out.println("Elemento não existe no vetor");
+            }
     }
 
     @Override
