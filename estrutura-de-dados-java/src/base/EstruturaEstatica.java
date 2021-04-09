@@ -2,14 +2,13 @@ package base;
 
 public class EstruturaEstatica<T> {
 
-    private T[] elementos;
-    private int tamanho, posicao, ultimaPosicao;
+    protected T[] elementos;
+    protected int tamanho;
 
 
     public EstruturaEstatica(int capacidade) {
         this.elementos = (T[])new Object[capacidade]; //Solução do livro Effective Java
         this.tamanho = 0;
-        this.ultimaPosicao = -1;
     }
 
     public EstruturaEstatica() {
