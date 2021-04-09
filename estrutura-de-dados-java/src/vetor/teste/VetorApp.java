@@ -1,6 +1,6 @@
 package vetor.teste;
 
-import vetor.arquivo.VetorObjetos;
+import vetor.VetorObjetos;
 
 public class VetorApp {
         public static void main(String[] args) {

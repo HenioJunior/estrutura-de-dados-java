@@ -11,5 +11,11 @@ public class Pilha1App {
         System.out.println(pilha);
         System.out.println(pilha.tamanho());
 
+        System.out.println(pilha.estaVazia());
+
+        pilha.empilha(1);
+
+        System.out.println(pilha.estaVazia());
+
     }
 }

@@ -57,6 +57,10 @@ public class EstruturaEstatica<T> {
         return tamanho;
     }
 
+    public boolean estaVazia() {
+        return tamanho == 0;
+    }
+
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();
