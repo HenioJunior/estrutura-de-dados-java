@@ -6,6 +6,7 @@ public class EstruturaEstatica<T> {
     protected int tamanho;
 
 
+    @SuppressWarnings("unchecked")
     public EstruturaEstatica(int capacidade) {
         this.elementos = (T[])new Object[capacidade]; //Solução do livro Effective Java
         this.tamanho = 0;

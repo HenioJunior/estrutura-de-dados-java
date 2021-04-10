@@ -22,5 +22,11 @@ public class PilhaApp {
         System.out.println(pilha.topo());
         System.out.println(pilha);
 
+        System.out.println("Desempilhando o elemento " + pilha.desempilha());
+
+        System.out.println(pilha);
+
+
+
     }
 }
