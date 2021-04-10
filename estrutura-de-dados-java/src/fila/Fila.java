@@ -26,11 +26,23 @@ public class Fila<T> extends EstruturaEstatica<T> {
 
     }
 
+    public T espiar() {
 
+        if(estaVazia()) {
+            return null;
+        }
+        return elementos[0];
+    }
 
+    public T desenfilerar() {
 
+        final int POS = 0;
 
-
-
-
+        if(estaVazia()) {
+            return null;
+        }
+      T elementoASerRemovido = elementos[POS];
+        remove(POS);
+        return elementoASerRemovido;
+    }
 }

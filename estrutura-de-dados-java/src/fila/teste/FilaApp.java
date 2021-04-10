@@ -8,6 +8,8 @@ public class FilaApp {
 
         Fila<Integer> fila = new Fila<>();
 
+        System.out.println(fila.espiar());
+
         System.out.println(fila.estaVazia());
         System.out.println(fila.tamanho());
 
@@ -18,6 +20,13 @@ public class FilaApp {
         System.out.println(fila.estaVazia());
         System.out.println(fila.tamanho());
 
+        fila.desenfilerar();
+        fila.desenfilerar();
+        fila.desenfilerar();
+
+        System.out.println(fila.espiar());
+
         System.out.println(fila.toString());
+
     }
 }
